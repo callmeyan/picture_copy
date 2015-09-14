@@ -15,7 +15,7 @@ $baseUrl = 'http://'.$_SERVER['HTTP_HOST'];
 if($_SERVER['SERVER_PORT'] != 80){
     $baseUrl .= ':'.$_SERVER['SERVER_PORT'];
 }
-if(dirname($_SERVER['SCRIPT_NAME']) != '\\'){
+if(dirname($_SERVER['SCRIPT_NAME']) != '\\' && dirname($_SERVER['SCRIPT_NAME']) != '/'){
     $baseUrl .= dirname($_SERVER['SCRIPT_NAME']);
 }
 if(get_config('base')){
