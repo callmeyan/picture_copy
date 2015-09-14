@@ -1,0 +1,20 @@
+
+.wrapper{}
+.index_ad
+,.wrapper .subnav
+,.flink
+,.main-nav .menu-right
+,.list_ad
+{
+    display: none;
+}
+.header .logo,.logo{
+    background-image:url('aaa.png');
+}
+.logo a{
+    width: 210px;
+}
+.main-nav{}
+#waterfall .text .promote_pic .pic_info .desc{
+    margin-top: 5px !important;
+}
