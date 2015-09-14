@@ -11,7 +11,16 @@ $appConf=include('app.config.php');
 include 'xtf.php';
 
 $targetUrl = $appConf['target'];
-$baseUrl = $appConf['base'];
+$baseUrl = 'http://'.$_SERVER['HTTP_HOST'];
+if($_SERVER['SERVER_PORT'] != 80){
+    $baseUrl .= ':'.$_SERVER['SERVER_PORT'];
+}
+if(dirname($_SERVER['SCRIPT_NAME']) != '\\'){
+    $baseUrl .= dirname($_SERVER['SCRIPT_NAME']);
+}
+if(get_config('base')){
+    $baseUrl = $appConf['base'];
+}
 $siteName = $appConf['siteName'];
 
 $reqUri = get_req_uri();

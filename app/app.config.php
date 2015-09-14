@@ -8,7 +8,7 @@
  */
 return array(
     'target' => 'http://tuku.hxd57.com',//目标站点
-    'base' => 'http://127.0.0.1/pro/xtf', //本地路径
+    'base' => '', //本地路径
     'siteName' => 'XXXX图片展', //本地路径
     'data_type' => 'file' //获取网络数据方式
 );
